@@ -1,0 +1,46 @@
+main {
+    padding-top: 20px;
+    height: 620px;
+    background-color: $bg-main;
+    width: 100%;
+    .main-wrapper {
+        padding-left: 20px;
+        height: 520px;
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .boxes {
+        width: calc(100% / 6);
+    }
+    .img-wrapper {
+        height: 180px;
+        width: 180px;
+    }
+    img {
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
+    }
+    .text-container {
+        padding-top: 15px;
+        height: 20px;
+    }
+    span {
+        font-size: 0.8rem;
+        color: white;
+        text-transform: uppercase;
+    }
+}
+.button-container {
+    height: 80px;
+    padding-top: 30px;
+    width: 100%;
+    text-align: center;
+    .button {
+        @include jb-main-buttons;
+    }
+}
