@@ -1,0 +1,30 @@
+header {
+    background-color: $light-color;
+    height: 100px;
+    width: 80%;
+    margin: 0 auto;
+    nav {
+        display: flex;
+        justify-content: space-between;
+        gap: 200px;
+    }
+    .img-container {
+        height: 80px;
+        margin-top: 10px;
+    }
+    img {
+        @include img-fit;
+        padding-right: 200px;
+    }
+    ul {
+        @include inline-ul;
+        gap: 10px;
+    }
+    li {
+        @include inline-li;
+    }
+    .selected {
+        color: $color-header-selected;
+        border-bottom: 3px solid $color-header-selected;
+    }
+}

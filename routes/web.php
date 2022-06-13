@@ -14,5 +14,57 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/comics', function () {
-    return view('comics');
+    $navElms = [
+        [
+          "name" => "Character",
+          "link" => "",
+          "active" => false,
+        ],
+        [
+          "name" => "Comics",
+          "link" => "",
+          "active" => true,
+        ],
+        [
+          "name" => "Movies",
+          "link" => "",
+          "active" => false,
+        ],
+        [
+          "name" => "Tv",
+          "link" => "",
+          "active" => false,
+        ],
+        [
+          "name" => "Games",
+          "link" => "",
+          "active" => false,
+        ],
+        [
+          "name" => "Collectibles",
+          "link" => "",
+          "active" => false,
+        ],
+        [
+          "name" => "Videos",
+          "link" => "",
+          "active" => false,
+        ],
+        [
+          "name" => "Fans",
+          "link" => "",
+          "active" => false,
+        ],
+        [
+          "name" => "News",
+          "link" => "",
+          "active" => false,
+        ],
+        [
+          "name" => "Shop",
+          "link" => "",
+          "active" => false,
+        ],
+    ];
+    return view('comics', ['datiNav' => $navElms]);
 });

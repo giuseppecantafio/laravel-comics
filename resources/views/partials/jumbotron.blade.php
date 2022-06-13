@@ -1,3 +1,3 @@
 <div class="jumbotron">
-sono il jumbo
+    <span class="button">Current series</span>
 </div>
