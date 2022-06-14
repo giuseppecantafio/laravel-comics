@@ -1,6 +1,6 @@
  <main>
       <div class="main-wrapper">
-         @foreach ($datiMain as $elm)
+         @foreach ($dati[1] as $elm)
             <div class="boxes"">
                 <div class="img-wrapper">
                 <img src="{{$elm['thumb']}}" alt="{{$elm['series']}}" />

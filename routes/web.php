@@ -162,5 +162,171 @@ Route::get('/comics', function () {
       'testo' => 'Dc power Visa',
     ]
   ];
-    return view('comics', ['datiNav' => $navElms], ['datiMain' => $cardsElms], ['datiFooterTop' => $footerTopElms]);
+  $footerMidElms = [
+      'dcComics' => [
+    [
+      'testo' => 'Characters',
+      'link' => '',
+      'active' => false,
+    ],
+    [
+      'testo' => 'Comics',
+      'link' => '',
+      'active' => false,
+    ],
+    [
+      'testo' => 'Movies',
+      'link' => '',
+      'active' => false,
+    ],
+    [
+      'testo' => 'TV',
+      'link' => '',
+      'active' => false,
+    ],
+    [
+      'testo' => 'Games',
+      'link' => '',
+      'active' => false,
+    ],
+    [
+      'testo' => 'Videos',
+      'link' => '',
+      'active' => false,
+    ],
+    [
+      'testo' => 'News',
+      'link' => '',
+      'active' => false,
+    ],
+  ],
+  'shop' => [
+    [
+      'testo' => 'Shop DC',
+      'link' => '',
+      'active' => false,
+    ],
+    [
+      'testo' => 'Shop DC Collectibles',
+      'link' => '',
+      'active' => false,
+    ],
+  ],
+  'dc' => [
+    [
+      'testo' => 'Terms of Use',
+      'link' => '',
+      'active' => false,
+    ],
+    [
+      'testo' => 'Privacy Policy(New)',
+      'link' => '',
+      'active' => false,
+    ],
+    [
+      'testo' => 'Ad choices',
+      'link' => '',
+      'active' => false,
+    ],
+    [
+      'testo' => 'Advertising',
+      'link' => '',
+      'active' => false,
+    ],
+    [
+      'testo' => 'Jobs',
+      'link' => '',
+      'active' => false,
+    ],
+    [
+      'testo' => 'Subscriptions',
+      'link' => '',
+      'active' => false,
+    ],
+    [
+      'testo' => 'Talent Workshops',
+      'link' => '',
+      'active' => false,
+    ],
+    [
+      'testo' => 'CPSC Certificates',
+      'link' => '',
+      'active' => false,
+    ],
+    [
+      'testo' => 'Ratings',
+      'link' => '',
+      'active' => false,
+    ],
+    [
+      'testo' => 'Shop Help',
+      'link' => '',
+      'active' => false,
+    ],
+    [
+      'testo' => 'Contact Us',
+      'link' => '',
+      'active' => false,
+    ],
+  ],
+  'sites' => [
+    [
+      'testo' => 'DC',
+      'link' => '',
+      'active' => false,
+    ],
+    [
+      'testo' => 'MAD Magazine',
+      'link' => '',
+      'active' => false,
+    ],
+    [
+      'testo' => 'DC Kids',
+      'link' => '',
+      'active' => false,
+    ],
+    [
+      'testo' => 'DC Universe',
+      'link' => '',
+      'active' => false,
+    ],
+    [
+      'testo' => 'DC Power Visa',
+      'link' => '',
+      'active' => false,
+    ],
+  ],
+  ];
+  $footerBotElms = [
+    [
+      'piattaforma' => 'facebook',
+      'immagine' => './img/footer-facebook.png',
+    ],
+    [
+      'piattaforma' => 'twitter',
+      'immagine' => './img/footer-twitter.png',
+    ],
+    [
+      'piattaforma' => 'youtube',
+      'immagine' => './img/footer-youtube.png',
+    ],
+    [
+      'piattaforma' => 'pinterest',
+      'immagine' => './img/footer-pinterest.png',
+    ],
+    [
+      'piattaforma' => 'periscope',
+      'immagine' => './img/footer-periscope.png',
+    ],
+  ];
+
+  $array = [];
+    array_push( $array, $navElms);
+    array_push( $array, $cardsElms);
+    array_push( $array, $footerTopElms);
+    array_push( $array, $footerMidElms);
+    array_push( $array, $footerBotElms);
+
+ return view('comics', ['dati' => $array]);
+    // return view('comics', ['datiNav' => $navElms], ['datiMain' => $cardsElms], ['datiFooter' => $footerTopElms]);
 });

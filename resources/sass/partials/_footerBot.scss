@@ -1,0 +1,41 @@
+.footer-bottom {
+    width: 100%;
+    height: 100px;
+    background-color: $bg-footer-bot;
+    .fb-wrapper {
+        width: 80%;
+        height: 100%;
+        margin: 0 auto;
+        display: flex;
+        .fb-left,
+        .fb-right {
+            width: 50%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+        .fb-right {
+            justify-content: flex-end;
+        }
+    }
+    .sign-up {
+        padding: 10px 5px;
+        margin: 2px;
+        border: 2px solid $color-border-footer-bot-sign-up-now;
+        text-transform: uppercase;
+        color: white;
+    }
+    .text-container {
+        text-transform: uppercase;
+        color: $color-footer-bot-follow-us;
+    }
+    ul {
+        @include inline-ul;
+        line-height: 0 !important;
+        gap: 10px;
+    }
+    li {
+        @include inline-li;
+    }
+}

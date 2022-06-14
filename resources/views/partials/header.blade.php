@@ -4,7 +4,7 @@
           <img src="./img/dc-logo.png" alt="dc logo" />
         </div>
         <ul>
-            @foreach($datiNav as $elm)
+            @foreach($dati[0] as $elm)
           <li class="{{$elm['active'] ? 'selected' : ''}}">
             {{$elm['name']}}
           </li>
